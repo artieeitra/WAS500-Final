@@ -1,0 +1,19 @@
+<html>
+<title>Books list</title>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<%- include('navbar') %>
+<div class="main">
+<h1> Book List </h1>
+<table>
+<% books.forEach(function (book) { %> 
+<tr>
+<td><a href="/books/<%= book.id %>"><img src="/images/<%= book.image %>" width="250" height="350"></a></td>
+<td><h2><%= book.name %></h2></td>
+</tr> <% });%>
+</table>
+</div>
+</body>
+</html>

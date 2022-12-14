@@ -1,0 +1,26 @@
+<html>
+<title>Admin</title>
+<head>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>   
+<%- include('navbar') %>
+<div class="main">
+<div class="admintable">
+<table>
+<tr>
+<th>ID</th><th>Name</th><th>Author</th><th>Edit</th><th>Delete</th>
+</tr>
+<% books.forEach(function (book) { %>
+<tr><td><%= book.id %> </td>
+<td><%= book.name %> </td>
+<td><%= book.author %> </td>
+<td><a href="/edit/<%= book.id %>">Edit Book</a></td>
+<td><a class="delete" datadel="<%= book.id %>">Delete Book</a></td>
+</tr> <% }) %>
+</table>
+</div>
+</div>
+<script src="/js/check.js"></script>
+</body>
+</html>

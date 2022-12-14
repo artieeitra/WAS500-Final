@@ -1,0 +1,15 @@
+<html>
+<title><%= book.name %></title>
+<head>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>   
+<%- include('navbar') %>
+<div class="main">
+<h1><%= book.name %></h1>       
+<img src="/images/<%= book.image %>" style="float:left" height="400px" width="300px">
+<p>Author: <%= book.author %></p>
+<p>Description: <%= book.description %></p>
+</div>
+</body>
+</html>

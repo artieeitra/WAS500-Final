@@ -1,0 +1,19 @@
+<html>
+<title>Add a new book</title>
+<head>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>   
+<%- include('navbar') %>
+<div class="main">
+<form method="post">
+<p>Please enter book's name:</p>
+<input type="text" name="name" placeholder="Enter book name">
+<p>Please enter book's author:</p>
+<input type="text" name="author" placeholder="Enter author's name">
+<br><br>
+<input type="submit" value="Add Book" name="submit">
+</form>
+</div>
+</body>
+</html>
